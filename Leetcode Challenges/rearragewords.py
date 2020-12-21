@@ -13,18 +13,12 @@ class Solution:
         text = text.lower()
         # store text in a list
         newText = text.split()
-
         # check for shortest string in list
         # Push to a new list in order
         inOrderList = sorted(newText, key=len)
-
         # capitalizE first item in list
-
         inOrderList[0].title()
-
         print(inOrderList)
-
         result = ' '  # final string result
-
         # Create String
         return (result.join(inOrderList).capitalize())
